@@ -19,6 +19,15 @@ class CreateClientsTable extends Migration
             $table->string('prénom');
             $table->string('sexe');
             $table->string('situation_familiale');
+            $table->string('nom_prenom_pere');
+            $table->string('nom_prenom_mere');
+            $table->date('date_naissance');
+            $table->string('lieu_naissance');
+            $table->string('autres_natio');
+            $table->string('vip');
+            $table->string('statut');
+            $table->string('nature');
+            $table->string('capacite_juridique');
             $table->timestamps();
         });
     }

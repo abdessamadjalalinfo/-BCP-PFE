@@ -15,6 +15,9 @@ class CreateInfoResidencesTable extends Migration
     {
         Schema::create('info_residences', function (Blueprint $table) {
             $table->id();
+            $table->string('statut_propriete');
+            $table->string('type_propriete');
+            $table->date('residence_a_partir');
             $table->timestamps();
         });
     }
