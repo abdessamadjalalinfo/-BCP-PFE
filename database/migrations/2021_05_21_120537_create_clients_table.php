@@ -47,6 +47,14 @@ class CreateClientsTable extends Migration
             $table->unsignedBigInteger('connaissance_id');
             $table->foreign('connaissance_id')->references('id')->on('connaissances');
 
+            $table->unsignedBigInteger('user_id');
+
+            $table->foreign('user_id')->references('id')->on('users');
+
+            $table->unsignedBigInteger('audit_id');
+
+            $table->foreign('audit_id')->references('id')->on('audits');
+
             $table->timestamps();
         });
     }
