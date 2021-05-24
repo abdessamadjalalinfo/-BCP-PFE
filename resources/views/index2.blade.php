@@ -96,14 +96,29 @@
           </div>
         </div>
       </li>
+      <div class="sidebar-heading">
+       Reporting
+      </div>
+       <li class="nav-item">
+         <a class="nav-link" href="{{route('reporting')}}">
+          <i class="fas fa-fw fa-folder"></i>
+          <span>Remontation</span></a>
+      </li>
 
-      <!-- Nav Item - Charts -->
-     
-
-      <!-- Nav Item - Tables -->
-     
-
-      <!-- Divider -->
+       <div class="sidebar-heading">
+      Personne Physique
+      </div>
+      <li class="nav-item">
+         <a class="nav-link" href="{{route('creation')}}">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <span>Création</span></a>
+      </li>
+      <li class="nav-item">
+         <a class="nav-link" href="{{route('modification')}}">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <span>Modification</span></a>
+      </li>
+    
       <hr class="sidebar-divider d-none d-md-block">
 
       <!-- Sidebar Toggler (Sidebar) -->
@@ -315,7 +330,7 @@
       <footer class="sticky-footer bg-white">
         <div class="container my-auto">
           <div class="copyright text-center my-auto">
-            <span>Copyright &copy; Your Website 2019</span>
+            <span>Copyright &copy; Banque Centrale Populaire 2021</span>
           </div>
         </div>
       </footer>

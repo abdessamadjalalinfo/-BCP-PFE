@@ -41,6 +41,15 @@ Route::get('/agence/{id}', function ($id) { {
         return view('unique_agence')->with('year', json_encode($year, JSON_NUMERIC_CHECK))->with('user', json_encode($user, JSON_NUMERIC_CHECK));
     }
 });
+Route::get('agence/{id}/incoherences', [App\Http\Controllers\Incoherence::class, 'index'])->name('incoherences');
+Route::get('clients', [App\Http\Controllers\Client::class, 'index'])->name('clients');
+
+
+Route::get('creation', [App\Http\Controllers\Client::class, 'creation'])->name('creation');
+Route::get('modification', [App\Http\Controllers\Client::class, 'modification'])->name('modification');
+
+
+Route::get('reporting', [App\Http\Controllers\Agence::class, 'index'])->name('reporting');
 
 
 //Route::get('users', 'UserChartController@index');
