@@ -21,15 +21,17 @@ use App\Http\Controllers\ChartJsController;
 |
 */
 
+
+
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('dashboard');
+})->middleware('auth');
 Route::get('/agences', function () {
     return view('agence');
 })->name('agences');
-Route::get('/index2', function () {
+Route::get('/index', function () {
     return view('dashboard');
-})->name('index2');
+})->name('index');
 Route::get('/agence/{id}', function ($id) { {
         $year = ['2015', '2016', '2017', '2018', '2019', '2020', '2021'];
 
@@ -63,5 +65,6 @@ Route::get('reporting', [App\Http\Controllers\Agence::class, 'index'])->name('re
 
 
 Auth::routes();
+
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

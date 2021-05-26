@@ -55,6 +55,10 @@ class CreateClientsTable extends Migration
 
             $table->foreign('audit_id')->references('id')->on('audits');
 
+            $table->unsignedBigInteger('detail_id');
+
+            $table->foreign('detail_id')->references('id')->on('autre_details');
+
             $table->timestamps();
         });
     }
