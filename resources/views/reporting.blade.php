@@ -21,7 +21,7 @@
   <!-- END Page Level CSS-->
   <!-- BEGIN Custom CSS-->
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
+<div class="container">
 
 
 
@@ -32,7 +32,11 @@
          
          
           <div class="row">
+            
             <div class="col-12">
+               <button type="button" class="btn btn-float btn-outline-cyan"><i class="la la-search"></i>
+                            <span>Mes clients</span>
+                          </button>
               <div class="card">
                 <div class="card-content">
                   <div class="card-body">
@@ -72,45 +76,38 @@
                           <span class="blue-grey darken-1 block">Non</span>
                           <span class="blue-grey darken-1 block"> Traité</span>
                         </div>
+                         
                       </div>
+                      
                     </div>
+                    
                   </div>
                 </div>
               </div>
             </div>
           </div>
          
+         
           
          
         </section>
 
-        <div class="app-content content">
+        <section class="app-content content">
     <div class="content-wrapper">
       <div class="content-header row">
         <div class="content-header-left col-md-6 col-12 mb-2">
-          <h3 class="content-header-title">Contacts</h3>
+          <h3 class="content-header-title">Clients Remontés</h3>
           <div class="row breadcrumbs-top">
             <div class="breadcrumb-wrapper col-12">
               <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.html">Home</a>
-                </li>
-                <li class="breadcrumb-item"><a href="#">Users</a>
-                </li>
-                <li class="breadcrumb-item active">Contacts
+                
+                <li class="breadcrumb-item active">Reporting
                 </li>
               </ol>
             </div>
           </div>
         </div>
-        <div class="content-header-right col-md-6 col-12">
-          <div class="btn-group float-md-right" role="group" aria-label="Button group with nested dropdown">
-            <button class="btn btn-info round dropdown-toggle dropdown-menu-right box-shadow-2 px-2"
-            id="btnGroupDrop1" type="button" data-toggle="dropdown" aria-haspopup="true"
-            aria-expanded="false"><i class="ft-settings icon-left"></i> Settings</button>
-            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1"><a class="dropdown-item" href="card-bootstrap.html">Cards</a><a class="dropdown-item"
-              href="component-buttons-extended.html">Buttons</a></div>
-          </div>
-        </div>
+        
       </div>
       <div class="content-detached content-right">
         <div class="content-body">
@@ -119,7 +116,7 @@
               <div class="card">
                 <div class="card-head">
                   <div class="card-header">
-                    <h4 class="card-title">All Contacts</h4>
+                    <h4 class="card-title">Tout les clients remontés</h4>
                     <a class="heading-elements-toggle"><i class="la la-ellipsis-h font-medium-3"></i></a>
                     <div class="heading-elements">
                       <button class="btn btn-primary btn-sm"><i class="ft-plus white"></i> Add Contacts</button>
@@ -128,8 +125,7 @@
                         aria-expanded="true" class="btn btn-warning dropdown-toggle dropdown-menu-right btn-sm"><i class="ft-download-cloud white"></i></button>
                         <span aria-labelledby="btnSearchDrop1" class="dropdown-menu mt-1 dropdown-menu-right">
                           <a href="#" class="dropdown-item"><i class="ft-upload"></i> Import</a>
-                          <a href="#" class="dropdown-item"><i class="ft-download"></i> Export</a>
-                          <a href="#" class="dropdown-item"><i class="ft-shuffle"></i> Find Duplicate</a>
+                          
                         </span>
                       </span>
                       <button class="btn btn-default btn-sm"><i class="ft-settings white"></i></button>
@@ -1257,41 +1253,11 @@
               <!-- contacts view -->
               <div class="card-body">
                 <div class="list-group">
-                  <a href="#" class="list-group-item active">All Contacts</a>
-                  <a href="#" class="list-group-item list-group-item-action">Recently contacted</a>
-                  <a href="#" class="list-group-item list-group-item-action">Favorite contacts</a>
+                  <a href="#" class="list-group-item active"> Remontation</a>
+                  
                 </div>
               </div>
-              <!-- Groups-->
-              <div class="card-body">
-                <p class="lead">Groups</p>
-                <ul class="list-group">
-                  <li class="list-group-item">
-                    <span class="badge badge-primary badge-pill float-right">14</span> <a href="#"> Project</a>
-                  </li>
-                  <li class="list-group-item">
-                    <span class="badge badge-info badge-pill float-right">22</span> <a href="#"> Team</a>
-                  </li>
-                  <li class="list-group-item">
-                    <span class="badge badge-warning badge-pill float-right">10</span> <a href="#"> Clients</a>
-                  </li>
-                  <li class="list-group-item">
-                    <span class="badge badge-success badge-pill float-right">5</span> <a href="#"> Friends</a>
-                  </li>
-                </ul>
-              </div>
-              <!--/ Groups-->
-              <!--More-->
-              <div class="card-body ">
-                <p class="lead">More</p>
-                <ul class="list-group">
-                  <li><a href="#" class="list-group-item">Import</a></li>
-                  <li><a href="#" class="list-group-item">Export</a></li>
-                  <li><a href="#" class="list-group-item">Print</a></li>
-                  <li><a href="#" class="list-group-item">Restore contacts</a></li>
-                  <li><a href="#" class="list-group-item">Find duplicate</a></li>
-                </ul>
-              </div>
+              
               <!--/More-->
             </div>
             <!--/ Predefined Views -->
@@ -1299,7 +1265,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
 
 
@@ -1346,4 +1312,6 @@
   <!-- END MODERN JS-->
   <!-- BEGIN PAGE LEVEL JS-->
   <script src="app-assets/js/scripts/pages/users-contacts.js" type="text/javascript"></script>
-@endsection
+</div>
+
+  @endsection

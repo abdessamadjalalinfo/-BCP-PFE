@@ -15,4 +15,13 @@ class Client extends Controller
     {
         return view('creation');
     }
+    public function modification()
+    {
+        return view('modification');
+    }
+
+    public function modification_client()
+    {
+        return view('modification-client');
+    }
 }

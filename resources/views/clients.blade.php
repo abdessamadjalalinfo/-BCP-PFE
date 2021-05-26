@@ -43,7 +43,13 @@ renderChoiceLimit:6
         <div class="form-check">
             <input class="form-check-input" type="checkbox" value="" id="box2">
             <label class="form-check-label" for="box2">
-                Problème de Résidence
+                Identité non renseigné
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="box2">
+            <label class="form-check-label" for="box2">
+                Résidence incohérente
             </label>
         </div>
 

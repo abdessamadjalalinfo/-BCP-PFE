@@ -29,7 +29,7 @@ Route::get('/agences', function () {
 })->name('agences');
 Route::get('/index2', function () {
     return view('dashboard');
-});
+})->name('index2');
 Route::get('/agence/{id}', function ($id) { {
         $year = ['2015', '2016', '2017', '2018', '2019', '2020', '2021'];
 
@@ -48,8 +48,12 @@ Route::get('clients', [App\Http\Controllers\Client::class, 'index'])->name('clie
 Route::get('creation', [App\Http\Controllers\Client::class, 'creation'])->name('creation');
 Route::get('modification', [App\Http\Controllers\Client::class, 'modification'])->name('modification');
 
+Route::get('modification/{id}', [App\Http\Controllers\Client::class, 'modification_client'])->name('modification_client');
+
 
 Route::get('reporting', [App\Http\Controllers\Agence::class, 'index'])->name('reporting');
+
+
 
 
 //Route::get('users', 'UserChartController@index');
