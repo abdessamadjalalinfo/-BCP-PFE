@@ -18,11 +18,14 @@
  <script type="text/javascript">
    $(function() {
     $('.work-select').change(function() {
+      console.log({
+                region: $(this).val(), _token: '{{csrf_token()}}'
+            })
       
         $.ajax({
            
             method: "POST",
-            url: "/getville",
+            url: "{{route('getville')}}",
             data: {
                 region: $(this).val(), _token: '{{csrf_token()}}'
             },
@@ -64,7 +67,7 @@
         $.ajax({
            
             method: "POST",
-            url: "/getagence",
+            url: "{{route('getagence')}}",
             data: {
                 ville: $(this).val(), _token: '{{csrf_token()}}' 
             },

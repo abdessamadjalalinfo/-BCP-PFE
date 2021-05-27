@@ -14,6 +14,7 @@ class Agence extends Controller
     }
     public function getville(Request $request)
     {
+        //return $request;
         $Ville = \App\Models\Agence::where('region', '=', $request->region)->distinct()->get(['ville']);
         return $Ville;
     }

@@ -45,8 +45,8 @@ Route::get('/agence/{id}', function ($id) { {
 })->middleware('auth');;
 Route::get('agence/{id}/incoherences', [App\Http\Controllers\Incoherence::class, 'index'])->name('incoherences')->middleware('auth');;
 Route::get('clients', [App\Http\Controllers\Client::class, 'index'])->name('clients')->middleware('auth');
-Route::Post('/getville', [App\Http\Controllers\Agence::class, 'getville']);
-Route::Post('/getagence', [App\Http\Controllers\Agence::class, 'getagence']);
+Route::Post('/getville', [App\Http\Controllers\Agence::class, 'getville'])->name('getville');
+Route::Post('/getagence', [App\Http\Controllers\Agence::class, 'getagence'])->name('getagence');
 
 
 Route::get('creation', [App\Http\Controllers\Client::class, 'creation'])->name('creation');
