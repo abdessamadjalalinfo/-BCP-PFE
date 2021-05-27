@@ -1,6 +1,26 @@
 @extends('index2')
 @section('contenu')
+<link rel="apple-touch-icon" href="app-assets/images/ico/apple-icon-120.png">
+  <link rel="shortcut icon" type="image/x-icon" href="app-assets/images/ico/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Quicksand:300,400,500,700"
+  rel="stylesheet">
+  <link href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css"
+  rel="stylesheet">
+  <!-- BEGIN VENDOR CSS-->
+  <link rel="stylesheet" type="text/css" href="app-assets/css/vendors.css">
+  <!-- END VENDOR CSS-->
+  <!-- BEGIN MODERN CSS-->
+  <link rel="stylesheet" type="text/css" href="app-assets/css/app.css">
+  <!-- END MODERN CSS-->
+  <!-- BEGIN Page Level CSS-->
+  <link rel="stylesheet" type="text/css" href="app-assets/css/core/menu/menu-types/vertical-menu.css">
+  <link rel="stylesheet" type="text/css" href="app-assets/css/core/colors/palette-gradient.css">
+  <link rel="stylesheet" type="text/css" href="app-assets/css/core/colors/palette-callout.css">
+  <!-- END Page Level CSS-->
+  <!-- BEGIN Custom CSS-->
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 <style>
+  
     .card-counter{
     box-shadow: 2px 2px 10px #DADADA;
     margin: 5px;
@@ -63,9 +83,36 @@
 </style>
 
 <div class="container">
-    <div class="alert alert-primary" role="alert">
-  l'agence 1 situé à casa
+  <div class="row">
+          <div class="col-12">
+            <div class="card">
+              
+             
+              <div class="table-responsive">
+                <table class="table">
+                  <thead class="bg-warning white">
+                    <tr>
+                      <th>Ville</th>
+                      <th>Agence</th>
+                      <th>Région</th>
+                      <th>Adresse</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">{{$agence->ville}}</th>
+                      <td>{{$agence->nom}}</td>
+                      <td>{{$agence->region}}</td>
+                      <td>{{$agence->adresse}}</td>
+                    </tr>
+                   
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
         </div>
+    <br>
           <button type="button" class="btn btn-success  btn-lg" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Voir les incoherences <i class="fas fa-search"></i></button>
 
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -277,38 +324,7 @@
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
 <script>
-    var year = <?php echo $year; ?>;
-    var user = <?php echo $user; ?>;
-    var barChartData = {
-        labels: year,
-        datasets: [{
-            label: 'User',
-            backgroundColor: "pink",
-            data: user
-        }]
-    };
-
-    window.onload = function() {
-        var ctx = document.getElementById("canvas").getContext("2d");
-        window.myBar = new Chart(ctx, {
-            type: 'bar',
-            data: barChartData,
-            options: {
-                elements: {
-                    rectangle: {
-                        borderWidth: 2,
-                        borderColor: '#c1c1c1',
-                        borderSkipped: 'bottom'
-                    }
-                },
-                responsive: true,
-                title: {
-                    display: true,
-                    text: 'Yearly User Joined'
-                }
-            }
-        });
-    };
+    
     new Chart(document.getElementById("bar-chart"), {
     type: 'bar',
     data: {
