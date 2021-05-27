@@ -31,7 +31,7 @@ Route::get('/agences', function () {
 })->name('agences');
 Route::get('/index', function () {
     return view('dashboard');
-})->name('index');
+})->name('index')->middleware('auth');;
 Route::get('/agence/{id}', function ($id) { {
         $year = ['2015', '2016', '2017', '2018', '2019', '2020', '2021'];
 
@@ -42,9 +42,11 @@ Route::get('/agence/{id}', function ($id) { {
 
         return view('unique_agence')->with('year', json_encode($year, JSON_NUMERIC_CHECK))->with('user', json_encode($user, JSON_NUMERIC_CHECK));
     }
-});
-Route::get('agence/{id}/incoherences', [App\Http\Controllers\Incoherence::class, 'index'])->name('incoherences');
-Route::get('clients', [App\Http\Controllers\Client::class, 'index'])->name('clients');
+})->middleware('auth');;
+Route::get('agence/{id}/incoherences', [App\Http\Controllers\Incoherence::class, 'index'])->name('incoherences')->middleware('auth');;
+Route::get('clients', [App\Http\Controllers\Client::class, 'index'])->name('clients')->middleware('auth');
+Route::Post('/getville', [App\Http\Controllers\Agence::class, 'getville']);
+Route::Post('/getagence', [App\Http\Controllers\Agence::class, 'getagence']);
 
 
 Route::get('creation', [App\Http\Controllers\Client::class, 'creation'])->name('creation');
