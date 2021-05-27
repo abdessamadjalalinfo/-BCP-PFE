@@ -13,6 +13,9 @@
     <select name="region" id="select-work" class="work-select form-control form-control-md">
         <option value="Grand Casa">Grand Casablanca</option>
         <option value="Rabat-Kénitra">Rabat Kénitra</option>
+        <option value="Marrakech-tansift-Haouz">Marrakech-tansift-Haouz</option>
+
+        Marrakech-tansift-Haouz
         
     </select>
  <script type="text/javascript">
