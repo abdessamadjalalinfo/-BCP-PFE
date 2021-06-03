@@ -12,4 +12,8 @@ class Agence extends Model
     {
         return $this->hasMany(Client::class);
     }
+    public function succursal()
+    {
+        return $this->belongsTo(Succursal::class);
+    }
 }

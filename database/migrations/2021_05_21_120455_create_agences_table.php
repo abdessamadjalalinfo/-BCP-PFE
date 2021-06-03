@@ -19,6 +19,10 @@ class CreateAgencesTable extends Migration
             $table->string('ville');
             $table->string('quartier');
             $table->string('adresse');
+            $table->unsignedBigInteger('succursal_id');
+
+            $table->foreign('succursal_id')->references('id')->on('succursals');
+
             $table->timestamps();
         });
     }

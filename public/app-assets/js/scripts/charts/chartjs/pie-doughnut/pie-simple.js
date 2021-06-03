@@ -24,9 +24,9 @@ $(window).on("load", function(){
 
     // Chart Data
     var chartData = {
-        labels: ["January", "February", "March", "April", "May"],
+        labels: ["Résidence-Natio Manquantes ou incohérentes", "Coordonnées Manquantes", "Les dates Mqs", "Incohérence 4", "Incohérence 5"],
         datasets: [{
-            label: "My First dataset",
+            label: "Fiches signalétiques",
             data: [85, 65, 34, 45, 35],
             backgroundColor: ['#00A5A8', '#626E82', '#FF7D4D','#FF4558', '#28D094'],
         }]

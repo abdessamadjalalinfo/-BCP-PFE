@@ -32,7 +32,7 @@
       <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{route('index')}}">
         <div class="sidebar-brand-icon rotate-n-15">
           <!--i class="fas fa-laugh-wink"></i-->
-          <img src="{{asset('img/Image.png')}}" height="50" alt="">
+          <img src="{{asset('img/bcp.png')}}" height="50" alt="">
         </div>
        
       </a>
@@ -52,15 +52,27 @@
 
       <!-- Heading -->
       <div class="sidebar-heading">
-        voir
+        Statistiques
       </div>
 
       <!-- Nav Item - Pages Collapse Menu -->
+      
+      <li class="nav-item">
+         <a class="nav-link" href="#">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <span>BPR</span></a>
+      </li>
+      <li class="nav-item">
+         <a class="nav-link" href="#">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <span>Succursale</span></a>
+      </li>
       <li class="nav-item">
          <a class="nav-link" href="{{route('agences')}}">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Agences</span></a>
       </li>
+      
 
       <!-- Nav Item - Utilities Collapse Menu -->
       <li class="nav-item">
@@ -372,7 +384,7 @@
         </div>
       </div>
     </div>
-  </div>{{asset('')}}
+  </div>
 
   <!-- Bootstrap core JavaScript-->
   <script src="{{asset('vendor/jquery/jquery.min.js')}}"></script>

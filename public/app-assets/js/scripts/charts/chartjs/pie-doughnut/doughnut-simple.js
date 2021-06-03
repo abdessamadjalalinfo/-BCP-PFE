@@ -24,10 +24,10 @@ $(window).on("load", function(){
 
     // Chart Data
     var chartData = {
-        labels: ["January", "February", "March", "April", "May"],
+        labels: ["Jalal", "February", "March", "April", "May"],
         datasets: [{
             label: "My First dataset",
-            data: [65, 35, 24, 45, 85],
+            data: [65, 35, 24, 45, 20],
             backgroundColor: ['#00A5A8', '#626E82', '#FF7D4D','#FF4558', '#28D094'],
         }]
     };

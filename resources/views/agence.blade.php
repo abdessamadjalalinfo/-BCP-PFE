@@ -9,13 +9,15 @@
     <form id='form'>
   
   <div class="form-group">
-    <label for="exampleFormControlSelect1">Région</label>
+    <label for="exampleFormControlSelect1">Veuillez Sélectionner la BPR</label>
     <select name="region" id="select-work" class="work-select form-control form-control-md">
-        <option value="Grand Casa">Grand Casablanca</option>
-        <option value="Rabat-Kénitra">Rabat Kénitra</option>
-        <option value="Marrakech-tansift-Haouz">Marrakech-tansift-Haouz</option>
+        <option value="1">Grand Casablanca</option>
+        <option value="2">Rabat </option>
+        <option value="6">Marrakech-tansift-Haouz</option>
+        <option value="5">Zone Sud</option>
+        <option value="4"> Tanger</option>
 
-        Marrakech-tansift-Haouz
+       
         
     </select>
  <script type="text/javascript">
@@ -28,7 +30,7 @@
         $.ajax({
            
             method: "POST",
-            url: "{{route('getville')}}",
+            url: "{{route('getsuccursals')}}",
             data: {
                 region: $(this).val(), _token: '{{csrf_token()}}'
             },
@@ -38,7 +40,7 @@
             $country.empty();
             $('#ville').empty();
             for (var i = 0; i < data.length; i++) {
-                $country.append('<option value=' + data[i].ville + '>' + data[i].ville + '</option>');
+                $country.append('<option value=' + data[i].id + '>' + data[i].name + '</option>');
             }
 
             //manually trigger a change event for the contry so that the change handler will get triggered
@@ -54,7 +56,7 @@
   </div>
   <div class="form-group">
     {!! csrf_field() !!}
-    <label for="exampleFormControlSelect1">Ville</label>
+    <label for="exampleFormControlSelect1">Succursale </label>
     <select id='ville' class="form-control form-control-md">
         <option>Ville 1</option>
     </select>
@@ -111,8 +113,9 @@
 
        var $country = $('#form');
        $('.btn-success').remove()
+       if($('#agence').val()!=null){
         $country.append('<a href=agence/'+$('#agence').val()+' class="btn btn-success">Choisir</a>');
-           
+           }
 
 
 
@@ -129,4 +132,6 @@
 
 
 </div>
+
+ 
 @endsection

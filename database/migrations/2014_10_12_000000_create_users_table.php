@@ -20,10 +20,12 @@ class CreateUsersTable extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             //$table->string('nom');
-            $table->string('isAdmin');
-            $table->string('ville');
-            $table->string('quartier');
-            $table->string('adresse');
+            $table->string('isAdmin')->default("non");
+            $table->string('ville')->default("Casablanca");
+            $table->string('quartier')->default("Casablanca Zerktouni");
+            $table->string('adresse')->default("zerktouni avenue");
+            $table->unsignedBigInteger('succursal_id')->default(1);
+            $table->foreign('succursal_id')->references('id')->on('succursals');
             $table->rememberToken();
             $table->timestamps();
         });

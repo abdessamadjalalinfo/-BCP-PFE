@@ -26,16 +26,16 @@ class Agence extends Controller
 
         return view('unique_agence', ['agence' => $agence]);
     }
-    public function getville(Request $request)
+    public function getsuccursals(Request $request)
     {
         //return $request;
-        $Ville = \App\Models\Agence::where('region', '=', $request->region)->distinct()->get(['ville']);
+        $Ville = \App\Models\Bpr::find($request->region)->succursals()->get();
         return $Ville;
     }
     public function getagence(Request $request)
     {
         //return $request;
-        $agence = \App\Models\Agence::where('ville', '=', $request->ville)->distinct()->get(['nom', 'id']);
-        return $agence;
+        $agences = \App\Models\Succursal::find($request->ville)->agences()->get();
+        return $agences;
     }
 }
