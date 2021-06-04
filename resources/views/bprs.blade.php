@@ -30,7 +30,7 @@
                       </select>
                       
                     </div>
-                    <a  href="/bprs/1"class="btn btn-success">Voir</a>
+                    <a  href="{{route('bpr',['id'=>2])}}"class="btn btn-success">Voir</a>
 </div>
 <script src="app-assets/vendors/js/vendors.min.js" type="text/javascript"></script>
   <!-- BEGIN VENDOR JS-->

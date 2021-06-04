@@ -58,7 +58,7 @@ Route::get('/bprs', function () {
 })->name('bprs');
 Route::get('bprs/{id}', function ($id) {
     return view('bprs-unique');
-});
+})->name('bpr');
 
 
 
