@@ -53,6 +53,12 @@ Route::get('reporting', [App\Http\Controllers\Agence::class, 'index'])->name('re
 Route::get('test', function () {
     return view('test');
 })->name('test');
+Route::get('/bprs', function () {
+    return view('bprs');
+})->name('bprs');
+Route::get('bprs/{id}', function ($id) {
+    return view('bprs-unique');
+});
 
 
 

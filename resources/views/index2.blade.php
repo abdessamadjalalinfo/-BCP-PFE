@@ -58,7 +58,7 @@
       <!-- Nav Item - Pages Collapse Menu -->
       
       <li class="nav-item">
-         <a class="nav-link" href="#">
+         <a class="nav-link" href="{{route('bprs')}}">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>BPR</span></a>
       </li>
