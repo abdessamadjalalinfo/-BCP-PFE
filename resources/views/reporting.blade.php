@@ -112,6 +112,105 @@
           
          
         </section>
+         <section id="configuration">
+          <div class="row">
+            <div class="col-12">
+              <div class="card">
+                <div class="card-header">
+                  <h4 class="card-title">Clients à traiter</h4>
+                  <a class="heading-elements-toggle"><i class="la la-ellipsis-v font-medium-3"></i></a>
+                  <div class="heading-elements">
+                    <ul class="list-inline mb-0">
+                      <li><a data-action="collapse"><i class="ft-minus"></i></a></li>
+                      <li><a data-action="reload"><i class="ft-rotate-cw"></i></a></li>
+                      <li><a data-action="expand"><i class="ft-maximize"></i></a></li>
+                      <li><a data-action="close"><i class="ft-x"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="card-content collapse show">
+                  <div class="card-body card-dashboard">
+                   
+                    <table class="table table-striped table-bordered zero-configuration">
+                      <thead>
+                        <tr>
+                          <th>Nom Prénom</th>
+                          <th>CIN</th>
+                          <th>Téléphone</th>
+                          <th>Adresse</th>
+                          <th>à Traiter</th>
+                          <th>Option</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Tiger Nixon</td>
+                          <td>System Architect</td>
+                          <td>Edinburgh</td>
+                          <td>61</td>
+                          <td>Incohérence1</td>
+                          <td><div class="btn-group" role="group" aria-label="Basic example">
+                            <a target='_blank'  href="{{route('creation')}}"type="button" class="btn btn-primary">Modifier fiche</a>
+                          
+                           
+                          </div></td>
+                          
+                        </tr>
+                        <tr>
+                          <td>Garrett Winters</td>
+                          <td>Accountant</td>
+                          <td>Tokyo</td>
+                          <td>63</td>
+                           <td>Incohérence2</td>
+                          <td><div class="btn-group" role="group" aria-label="Basic example">
+                            <a  target='_blank' href="{{route('creation')}}" type="button" class="btn btn-primary">Modifier fiche</a>
+                            
+                          </div></td>
+                         
+                        </tr>
+                        <tr>
+                          <td>Ashton Cox</td>
+                          <td>Junior Technical Author</td>
+                          <td>San Francisco</td>
+                          <td>66</td>
+                          <td>Incohérence3-manque donnée 1</td>
+                          <td><div class="btn-group" role="group" aria-label="Basic example">
+                           <a target='_blank' href="{{route('creation')}}" type="button" class="btn btn-primary">Modifier fiche</a>
+                          </div></td>
+                          
+                        </tr>
+                        
+                      </tbody>
+                      <tfoot>
+                        <tr>
+                         <th>Nom Prénom</th>
+                          <th>CIN</th>
+                          <th>Téléphone</th>
+                          <th>Adresse</th>
+                          <th>à Traiter</th>
+                          <th>Option</th>
+                        </tr>
+                      </tfoot>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+          <script src="app-assets/vendors/js/vendors.min.js" type="text/javascript"></script>
+  <!-- BEGIN VENDOR JS-->
+  <!-- BEGIN PAGE VENDOR JS-->
+  <script src="app-assets/vendors/js/tables/datatable/datatables.min.js" type="text/javascript"></script>
+  <!-- END PAGE VENDOR JS-->
+  <!-- BEGIN MODERN JS-->
+  <script src="app-assets/js/core/app-menu.js" type="text/javascript"></script>
+  <script src="app-assets/js/core/app.js" type="text/javascript"></script>
+  <script src="app-assets/js/scripts/customizer.js" type="text/javascript"></script>
+  <!-- END MODERN JS-->
+  <!-- BEGIN PAGE LEVEL JS-->
+  <script src="app-assets/js/scripts/tables/datatables/datatable-basic.js"
+  type="text/javascript"></script>
 
 
 

@@ -78,13 +78,13 @@
                         <div class="row">
                           <div class="col-md-6">
                             <div class="form-group">
-                              <label for="firstName1">First Name :</label>
+                              <label for="firstName1">Nom :</label>
                               <input type="text" class="form-control" id="firstName1">
                             </div>
                           </div>
                           <div class="col-md-6">
                             <div class="form-group">
-                              <label for="lastName1">Last Name :</label>
+                              <label for="lastName1">Prénom :</label>
                               <input type="text" class="form-control" id="lastName1">
                             </div>
                           </div>
@@ -92,13 +92,13 @@
                         <div class="row">
                           <div class="col-md-6">
                             <div class="form-group">
-                              <label for="emailAddress1">Email Address :</label>
+                              <label for="emailAddress1">Email :</label>
                               <input type="email" class="form-control" id="emailAddress1">
                             </div>
                           </div>
                           <div class="col-md-6">
                             <div class="form-group">
-                              <label for="location1">Select City :</label>
+                              <label for="location1">Ville :</label>
                               <select class="c-select form-control" id="location1" name="location">
                                 <option value="">Select City</option>
                                 <option value="Amsterdam">Amsterdam</option>
@@ -111,7 +111,7 @@
                         <div class="row">
                           <div class="col-md-6">
                             <div class="form-group">
-                              <label for="phoneNumber1">Phone Number :</label>
+                              <label for="phoneNumber1">Téléphone :</label>
                               <input type="tel" class="form-control" id="phoneNumber1">
                             </div>
                           </div>
@@ -129,25 +129,25 @@
                         <div class="row">
                           <div class="col-md-6">
                             <div class="form-group">
-                              <label for="proposalTitle1">Proposal Title :</label>
+                              <label for="proposalTitle1">Sexe :</label>
                               <input type="text" class="form-control" id="proposalTitle1">
                             </div>
                             <div class="form-group">
-                              <label for="emailAddress2">Email Address :</label>
-                              <input type="email" class="form-control" id="emailAddress2">
+                              <label for="emailAddress2">Date Naissance :</label>
+                              <input type="date" class="form-control" id="emailAddress2">
                             </div>
                             <div class="form-group">
-                              <label for="videoUrl1">Video URL :</label>
+                              <label for="videoUrl1">Lieu de Naissance :</label>
                               <input type="url" class="form-control" id="videoUrl1">
                             </div>
                           </div>
                           <div class="col-md-6">
                             <div class="form-group">
-                              <label for="jobTitle1">Job Title :</label>
+                              <label for="jobTitle1">Capacité juridique :</label>
                               <input type="text" class="form-control" id="jobTitle1">
                             </div>
                             <div class="form-group">
-                              <label for="shortDescription1">Short Description :</label>
+                              <label for="shortDescription1">Situation Familiale :</label>
                               <textarea name="shortDescription" id="shortDescription1" rows="4" class="form-control"></textarea>
                             </div>
                           </div>
@@ -159,11 +159,11 @@
                         <div class="row">
                           <div class="col-md-6">
                             <div class="form-group">
-                              <label for="eventName1">Event Name :</label>
+                              <label for="eventName1">Nom et prénom Père :</label>
                               <input type="text" class="form-control" id="eventName1">
                             </div>
                             <div class="form-group">
-                              <label for="eventType1">Event Type :</label>
+                              <label for="eventType1">Nom prénom Mère :</label>
                               <select class="c-select form-control" id="eventType1" data-placeholder="Type to search cities"
                               name="eventType1">
                                 <option value="Banquet">Banquet</option>
@@ -173,7 +173,7 @@
                               </select>
                             </div>
                             <div class="form-group">
-                              <label for="eventLocation1">Event Location :</label>
+                              <label for="eventLocation1">Numéro d'identité :</label>
                               <select class="c-select form-control" id="eventLocation1" name="location">
                                 <option value="">Select City</option>
                                 <option value="Amsterdam">Amsterdam</option>
@@ -184,7 +184,7 @@
                           </div>
                           <div class="col-md-6">
                             <div class="form-group">
-                              <label>Event Date - Time :</label>
+                              <label>Nom sur pièce :</label>
                               <div class='input-group'>
                                 <input type='text' class="form-control datetime" />
                                 <span class="input-group-addon">
@@ -193,7 +193,7 @@
                               </div>
                             </div>
                             <div class="form-group">
-                              <label for="eventStatus1">Event Status :</label>
+                              <label for="eventStatus1">Date délivrance :</label>
                               <select class="c-select form-control" id="eventStatus1" name="eventStatus">
                                 <option value="Planning">Planning</option>
                                 <option value="In Progress">In Progress</option>
@@ -201,7 +201,7 @@
                               </select>
                             </div>
                             <div class="form-group">
-                              <label>Requirements :</label>
+                              <label>Date d'éxpirence :</label>
                               <div class="c-inputs-stacked">
                                 <div class="d-inline-block custom-control custom-checkbox">
                                   <input type="checkbox" name="status1" class="custom-control-input" id="staffing1">
@@ -222,15 +222,15 @@
                         <div class="row">
                           <div class="col-md-6">
                             <div class="form-group">
-                              <label for="meetingName1">Name of Meeting :</label>
+                              <label for="meetingName1"> Statut proprièté</label>
                               <input type="text" class="form-control" id="meetingName1">
                             </div>
                             <div class="form-group">
-                              <label for="meetingLocation1">Location :</label>
+                              <label for="meetingLocation1">Denomination_commerciale :</label>
                               <input type="text" class="form-control" id="meetingLocation1">
                             </div>
                             <div class="form-group">
-                              <label for="participants1">Names of Participants</label>
+                              <label for="participants1">Secteur d'activité</label>
                               <textarea name="participants" id="participants1" rows="4" class="form-control"></textarea>
                             </div>
                           </div>

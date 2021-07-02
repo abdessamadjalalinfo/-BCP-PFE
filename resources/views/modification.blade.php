@@ -24,12 +24,12 @@
 <div class="col-xl-6 col-lg-12">
               <div class="card">
                 <div class="card-header">
-                  <h4 class="card-title" id="list-editable">Add, Get & Remove</h4>
+                  <h4 class="card-title" id="list-editable">Entrez CIN</h4>
                 </div>
                 <div class="card-body">
                   <div class="card-body">
                     <div id="editable-list">
-                      <input type="text" class="search form-control round border-primary mb-1" placeholder="Search"
+                      <input type="text" class="search form-control round border-primary mb-1" placeholder="Cherchez"
                       />
                       <div class="row">
                         <div class="col-md-6 col-sm-12">
@@ -43,11 +43,11 @@
                         <table class="table table-bordered table-lg text-center">
                           <thead>
                             <tr>
-                              <th class="sort text-center" data-sort="name">Name</th>
-                              <th class="sort text-center" data-sort="age">Age</th>
-                              <th class="sort text-center" data-sort="city">City</th>
-                              <th>Edit</th>
-                              <th>Remove</th>
+                              <th class="sort text-center" data-sort="name">Nom Prénom</th>
+                              <th class="sort text-center" data-sort="age">Agence </th>
+                              <th class="sort text-center" data-sort="city">Téléphone</th>
+                              <th>Modifier</th>
+                             
                             </tr>
                           </thead>
                           <!-- IMPORTANT, class="list" have to be at tbody -->
@@ -55,68 +55,56 @@
                             <tr>
                               <td class="name">Jonny</td>
                               <td class="age">27</td>
-                              <td class="city">Stockholm</td>
+                              <td class="city">0636187128</td>
                               <td class="edit">
-                                <button class="btn btn-outline-primary edit-item-btn">Edit</button>
+                                <a target="_blank" href={{route('creation')}}  class="btn btn-outline-primary edit-item-btn">Modifier</a>
                               </td>
-                              <td class="remove">
-                                <button class="btn btn-outline-danger remove-item-btn">Remove</button>
-                              </td>
+                              
                             </tr>
                             <tr>
                               <td class="name">Jonas</td>
                               <td class="age">32</td>
-                              <td class="city">Berlin</td>
+                              <td class="city">0636187128</td>
                               <td class="edit">
-                                <button class="btn btn-outline-primary edit-item-btn">Edit</button>
+                                <a target="_blank"  href={{route('creation')}}  class="btn btn-outline-primary edit-item-btn">Modifier</a>
                               </td>
-                              <td class="remove">
-                                <button class="btn btn-outline-danger remove-item-btn">Remove</button>
-                              </td>
+                             
                             </tr>
                             <tr>
                               <td class="name">Gustaf</td>
                               <td class="age">23</td>
-                              <td class="city">Sundsvall</td>
+                              <td class="city">0636187128</td>
                               <td class="edit">
-                                <button class="btn btn-outline-primary edit-item-btn">Edit</button>
+                                <a  target="_blank" href={{route('creation')}}  class="btn btn-outline-primary edit-item-btn">Modifier</a>
                               </td>
-                              <td class="remove">
-                                <button class="btn btn-outline-danger remove-item-btn">Remove</button>
-                              </td>
+                              
                             </tr>
                             <tr>
                               <td class="name">Fredrik</td>
                               <td class="age">26</td>
-                              <td class="city">Goteborg</td>
+                              <td class="city">0636187128</td>
                               <td class="edit">
-                                <button class="btn btn-outline-primary edit-item-btn">Edit</button>
+                                <a target="_blank" href={{route('creation')}}  class="btn btn-outline-primary edit-item-btn">Modifier</a>
                               </td>
-                              <td class="remove">
-                                <button class="btn btn-outline-danger remove-item-btn">Remove</button>
-                              </td>
+                             
                             </tr>
                             <tr>
                               <td class="name">Otis</td>
                               <td class="age">36</td>
-                              <td class="city">Bacolod</td>
+                              <td class="city">0636187128</td>
                               <td class="edit">
-                                <button class="btn btn-outline-primary edit-item-btn">Edit</button>
+                                <a target="_blank" href={{route('creation')}}  class="btn btn-outline-primary edit-item-btn">Modifier</a>
                               </td>
-                              <td class="remove">
-                                <button class="btn btn-outline-danger remove-item-btn">Remove</button>
-                              </td>
+                             
                             </tr>
                             <tr>
                               <td class="name">Carla</td>
                               <td class="age">27</td>
                               <td class="city">Baleshwar</td>
                               <td class="edit">
-                                <button class="btn btn-outline-primary edit-item-btn">Edit</button>
+                                <a target="_blank" href={{route('creation')}} class="btn btn-outline-primary edit-item-btn">Modifier</a>
                               </td>
-                              <td class="remove">
-                                <button class="btn btn-outline-danger remove-item-btn">Remove</button>
-                              </td>
+                              
                             </tr>
                           </tbody>
                         </table>

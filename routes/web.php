@@ -73,3 +73,8 @@ Auth::routes();
 
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+use Andyabih\LaravelToUML\Http\Controllers\LaravelToUMLController;
+
+
+Route::get(config('laravel-to-uml.route'), [LaravelToUMLController::class, 'index']);

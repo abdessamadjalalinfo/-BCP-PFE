@@ -30,7 +30,7 @@
 
       <!-- Sidebar - Brand -->
       <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{route('index')}}">
-        <div class="sidebar-brand-icon rotate-n-15">
+        <div class="sidebar-brand-icon ">
           <!--i class="fas fa-laugh-wink"></i-->
           <img src="{{asset('img/bcp.png')}}" height="50" alt="">
         </div>
@@ -85,29 +85,7 @@
       <hr class="sidebar-divider">
 
       <!-- Heading -->
-      <div class="sidebar-heading">
-       Messagerie
-      </div>
-
-      <!-- Nav Item - Pages Collapse Menu -->
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
-          <i class="fas fa-fw fa-folder"></i>
-          <span>Messagerie</span>
-        </a>
-        <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Clients</h6>
-            <a class="collapse-item" href="login.html">fournir</a>
-            <a class="collapse-item" href="register.html">autres</a>
-          
-            <div class="collapse-divider"></div>
-            <h6 class="collapse-header">Interne</h6>
-            <a class="collapse-item" href="404.html">Entre Agence</a>
-           
-          </div>
-        </div>
-      </li>
+      
       <div class="sidebar-heading">
        Reporting
       </div>
@@ -400,13 +378,13 @@
   <script src="{{asset('vendor/chart.js/Chart.min.js')}}"></script>
 
   <!-- Page level custom scripts -->
-  <script src="{{asset('js/demo/chart-area-demo.js')}}"></script>
+
   <script src="{{asset('js/demo/chart-pie-demo.js')}}"></script>
 
 </body>
  <script src="{{asset('vendor/datatables/jquery.dataTables.min.js')}}"></script>
   <script src="{{asset('vendor/datatables/dataTables.bootstrap4.min.js')}}"></script>
-
+  <script src="{{asset('js/demo/chart-area-demo.js')}}"></script>
   <!-- Page level custom scripts -->
   <script src="{{asset('js/demo/datatables-demo.js')}}"></script>
 </html>

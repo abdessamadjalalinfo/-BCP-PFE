@@ -6,11 +6,20 @@
     'aliases' => 
     array (
     ),
-    'reference' => '27cfcc62aa834d831205b1c8fef90562427913dc',
+    'reference' => 'b33273c0c4c13feadcbacb132550b3d8e6fb4bc1',
     'name' => 'laravel/laravel',
   ),
   'versions' => 
   array (
+    'andyabih/laravel-to-uml' => 
+    array (
+      'pretty_version' => '1.0.3',
+      'version' => '1.0.3.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'd925215a7dbcaf813cabc8d83178e9f601c63b57',
+    ),
     'asm89/stack-cors' => 
     array (
       'pretty_version' => 'v2.0.3',
@@ -463,7 +472,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => '27cfcc62aa834d831205b1c8fef90562427913dc',
+      'reference' => 'b33273c0c4c13feadcbacb132550b3d8e6fb4bc1',
     ),
     'laravel/sail' => 
     array (
