@@ -22,7 +22,9 @@ use App\Http\Controllers\ChartJsController;
 */
 
 
-
+Route::get('/test1', function () {
+    dd(csrf_token());
+});
 Route::get('/', function () {
     return view('dashboard');
 })->middleware('auth');

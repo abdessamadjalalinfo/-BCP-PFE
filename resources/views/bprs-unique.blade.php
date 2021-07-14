@@ -207,7 +207,7 @@
                       <div class="insights px-2">
                         <div>
                           <span class="text-info h3">82%</span>
-                          <span class="float-right">Clients avec données 1 Manquant</span>
+                          <span class="float-right">>Clients avec date de naissance non renseigné</span>
                         </div>
                         <div class="progress progress-md mt-1 mb-0">
                           <div class="progress-bar bg-info" role="progressbar" style="width: 82%" aria-valuenow="25"
@@ -219,7 +219,7 @@
                       <div class="insights px-2">
                         <div>
                           <span class="text-success h3">78%</span>
-                          <span class="float-right">Clients avec données 2 Manquant</span>
+                          <span class="float-right">Clients avec incohérence mdm</span>
                         </div>
                         <div class="progress progress-md mt-1 mb-0">
                           <div class="progress-bar bg-success" role="progressbar" style="width: 78%" aria-valuenow="25"
@@ -233,7 +233,7 @@
                       <div class="insights px-2">
                         <div>
                           <span class="text-warning h3">68%</span>
-                          <span class="float-right">Clients avec incohérence 1 </span>
+                          <span class="float-right">Clients avec identité non renseigné </span>
                         </div>
                         <div class="progress progress-md mt-1 mb-0">
                           <div class="progress-bar bg-warning" role="progressbar" style="width: 68%" aria-valuenow="25"
@@ -245,7 +245,7 @@
                       <div class="insights px-2">
                         <div>
                           <span class="text-danger h3">62%</span>
-                          <span class="float-right">Clients avec incohérence 2</span>
+                          <span class="float-right">Clients avec info.financ non renseigné </span>
                         </div>
                         <div class="progress progress-md mt-1 mb-0">
                           <div class="progress-bar bg-danger" role="progressbar" style="width: 62%" aria-valuenow="25"
